@@ -43,3 +43,7 @@ jobs:
       - name: Analysing the code with pylint
         run: |
           pylint src
+  
+      # download artifacts
+      - name: Download all workflow run artifacts
+        uses: actions/download-artifact@v2
