@@ -42,16 +42,4 @@ jobs:
       #The final step runs pylint on all of the python files in the repository.
       - name: Analysing the code with pylint
         run: |
-          pylint src
-          
-      - name: 'Upload Artifact'
-        uses: actions/upload-artifact@v2
-        with:
-          name: my-artifact
-          path: my_file.txt
-          retention-days: 5
-  
-      # download artifacts
-      - name: Download all workflow run artifacts
-        uses: actions/download-artifact@v2
-
+          print(pylint src >> log.txt)
