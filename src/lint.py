@@ -2,6 +2,6 @@ def hello():
     """[summary]
     test
     """
-    print('hello')
+    print('hello2')
 
 hello()
